@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+  .contact{
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .wrapper{
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .wrapper .title h1{
+    color: #c5ecfd;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form{
+    display: flex;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+  }
+  
+  .msg textarea{
+    height: 244px;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #c5ecfd;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c5ecfd;
+  }
+  :-ms-input-placeholder {
+    color: #c5ecfd;
+  }
+  
+  .msg button {
+    width: 130px;
+    height: 50px;
+    background: #fff23a !important;
+    color: white !important;
+    font-size: 18px;
+    padding-right: 8px;
+    outline: none !important;
+    border: 2px solid transparent;
+  }
+  .msg button:hover{
+      background: transparent !important;
+      border: 2px solid #fff23a;
+      color: #fff23a !important;
+  }
+  @media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }

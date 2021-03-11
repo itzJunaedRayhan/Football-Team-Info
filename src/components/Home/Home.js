@@ -1,9 +1,14 @@
 import React from 'react';
-
+import Header from '../Header/Header';
+import Teams from '../Teams/Teams';
+import './Home.css'
+import '../Teams/Teams.css'
 const Home = () => {
+    
     return (
-        <div>
-            <h1>Allah Mohan</h1>
+        <div className="home">
+            <Header/>
+            <Teams/>
         </div>
     );
 };
